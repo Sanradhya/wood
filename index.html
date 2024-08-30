@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-J6mC+4O4+Mf6xGng6jA9vFcSb2/QQLLa2MW8w/pXZEmrNNh+Uu6qYrN6qXtAeCgG0tNT6HCOYcpF5UaLMPih8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="logo.jpeg" alt="Logo">
+            </a>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="intro">
+            <h1>Welcome to Bhowmik Jalighar</h1>
+            <p>We provide the best services to make your life better.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="hmm.jpeg" alt="Slide 1 Image">
+                    <div class="slide-text">
+                        <h3>Our Mission</h3>
+                        <p>
+                            At the core of our business philosophy is an unwavering commitment to delivering excellence in every dimension of our operations. We believe that true success is achieved not just by meeting expectations but by consistently exceeding them. This commitment is reflected in the quality of services we offer, where meticulous attention to detail and a passion for innovation ensure that we provide solutions that stand out in the marketplace. Our dedication extends beyond the products and services we deliver; it permeates the way we interact with our customers. We strive to build and nurture relationships based on trust, transparency, and mutual respect. Every customer interaction is an opportunity to demonstrate our reliability, responsiveness, and genuine care for their needs. By prioritizing customer satisfaction and fostering long-term partnerships, we aim to create value that lasts, reinforcing our reputation as a business that truly cares about its customers and the quality of its work.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="na.jpeg" alt="Slide 2 Image">
+                    <div class="slide-text">
+                        <h3>Our Vision</h3>
+                        <p>Our vision is to establish ourselves as a leader in the industry by consistently setting benchmarks in quality and innovation. We aspire to be at the forefront of our field, driving progress and pushing the boundaries of what is possible. Achieving this vision requires a steadfast commitment to excellence, where every product and service we deliver is a reflection of our dedication to high standards. Innovation is a key pillar of our strategy, as we continuously seek out new ideas, technologies, and approaches that can enhance our offerings and set us apart from the competition. However, our pursuit of leadership in the industry is not just about being the best; it's about being the best for our customers. We understand that true success comes from prioritizing customer satisfaction above all else. By listening to our customers, understanding their needs, and delivering solutions that exceed their expectations, we aim to build lasting relationships that drive our vision forward.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="okay.jpeg" alt="Slide 3 Image">
+                    <div class="slide-text">
+                        <h3>Our Values</h3>
+                        <p>Integrity, commitment, and excellence are the cornerstone values that propel us toward achieving our goals and surpassing our customers' expectations. Integrity is at the heart of our operations, guiding us to act with honesty and transparency in all our dealings. This commitment to ethical behavior ensures that our customers, partners, and stakeholders can trust us completely. Our dedication to commitment means that we consistently strive to deliver on our promises and go above and beyond to meet the needs of those we serve. We are unwavering in our pursuit of excellence, continuously seeking ways to improve and innovate to deliver the highest quality products and services. This relentless pursuit of excellence drives us to not only meet but exceed the expectations of our customers. By upholding these core values, we create a foundation of trust, reliability, and superior performance that fuels our success and fosters long-lasting relationships with our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-boxes">
+            <div class="service-box">
+                <img src="WhatsApp Image 2024-08-26 at 21.37.53.jpeg" alt="Service 1 Image">
+                <div class="service-content">
+                    Service 1
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="keno.jpeg" alt="Service 2 Image">
+                <div class="service-content">
+                    Service 2
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="ok.jpeg" alt="Service 3 Image">
+                <div class="service-content">
+                    Service 3
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="nice.jpeg" alt="Service 4 Image">
+                <div class="service-content">
+                    Service 4
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="acha.jpeg" alt="Service 5 Image">
+                <div class="service-content">
+                    Service 5
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="lets.jpeg" alt="Service 6 Image">
+                <div class="service-content">
+                    Service 6
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        
+
+        <h3>Mail: shanntanubhowmik@gmail.com</h3>
+        <h3> +91 8337071909 </h3>
+
+        <p>Get in touch with us for more information.</p>
+    </section>
+
+    <script>
+        // Existing code for the navigation menu
+        const menuIcon = document.getElementById('menu-icon');
+        const navMenu = document.getElementById('nav-menu');
+    
+        menuIcon.addEventListener('click', () => {
+            navMenu.classList.toggle('nav-menu-visible');
+        });
+    
+        // New code for the sliding panel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const slider = document.querySelector('.slider');
+    
+        function showSlide(slideIndex) {
+            if (slideIndex >= totalSlides) {
+                currentSlide = 0;
+            } else if (slideIndex < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = slideIndex;
+            }
+    
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    
+        function moveSlide() {
+            showSlide(currentSlide + 1);
+        }
+    
+        // Initialize the first slide
+        showSlide(currentSlide);
+    
+        // Set interval to change slide every 5 seconds
+        setInterval(moveSlide, 5000);
+    </script>    
+    
+    
+</body>
+</html>
